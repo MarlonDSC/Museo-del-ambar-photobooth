@@ -9,6 +9,7 @@ public class CambiarSceneWithBtn : MonoBehaviour
     //Vacio publico, que sirve para cargar la escena, (llama la escena por el nombre de esta)
     public void LoadScene(string SceneName)
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         //funciona dandole esta funcion a un boton y cuando este es presionado llama a la escena seleccionada...
         SceneManager.LoadScene(SceneName);
     }

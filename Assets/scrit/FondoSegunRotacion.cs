@@ -6,37 +6,34 @@ using UnityEngine;
 public class FondoSegunRotacion : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject verticar;
-    public GameObject horizontar;
+    public GameObject FondoVerticar;
+    public GameObject FondoHorizontar;
+    private bool OrientacionVerticar;
 
-    // Update is called once per frame
     private void Start()
     {
-        activador(verticar);
+        activador(FondoVerticar);
     }
-    void Update()
+    public void cambiarforma()
     {
-        switch (Screen.orientation)
+        if (OrientacionVerticar)
         {
-            case ScreenOrientation.Portrait:
-                activador(verticar);
-                break;
-            case ScreenOrientation.LandscapeRight:
-                activador(horizontar);
-                break;
-            case ScreenOrientation.LandscapeLeft:
-                activador(horizontar);
-                break;
-            default:
-
-                break;
+            activador(FondoVerticar);
+            OrientacionVerticar = false;
+            Screen.orientation = ScreenOrientation.Portrait;
+        }
+        else
+        {
+            activador(FondoHorizontar);
+             OrientacionVerticar = true;
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
         }
     }
 
     private void activador(GameObject x)
     {
-        verticar.SetActive(false);
-        horizontar.SetActive(false);
+        FondoVerticar.SetActive(false);
+        FondoHorizontar.SetActive(false);
         x.SetActive(true);
     }
 }
