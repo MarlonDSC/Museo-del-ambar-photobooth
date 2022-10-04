@@ -46,6 +46,11 @@ public class camarav2 : MonoBehaviour
         background.texture = backCam;
 
         camAvailable = true;
+
+        Screen.autorotateToPortrait = true;
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
+        Screen.autorotateToPortraitUpsideDown = false;
     }
     private void Update()
     {
