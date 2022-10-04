@@ -5,7 +5,7 @@ using UnityEngine;
 public class Aleatorio : MonoBehaviour
 {
     public Transform pos;
-
+    
 
     // luego de crear el publico "GameObject
     // El corchete que abri es para indicar que es una Array por lo cual puedo instancear varios objetos

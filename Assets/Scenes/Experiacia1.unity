@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 4
-  m_AspectRatio: NaN
+  m_AspectRatio: 1
 --- !u!114 &789234103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,7 +475,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1711348571}
-  - component: {fileID: 1711348570}
   m_Layer: 0
   m_Name: Orientacion
   m_TagString: Untagged
@@ -483,21 +482,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1711348570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711348569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74785ecc99d47da4995958d8c7ec33f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  verticar: {fileID: 0}
-  horizondar: {fileID: 0}
-  inicio: 0
 --- !u!4 &1711348571
 Transform:
   m_ObjectHideFlags: 0
